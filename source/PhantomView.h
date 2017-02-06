@@ -69,7 +69,7 @@ private:
    int32 _testSign[2];
    bool _awaitingAnswer;
 
-   static long TestThreadFunc(void * a) {return ((PhantomView*)a)->TestThread();}
+   static status_t TestThreadFunc(void * a) {return ((PhantomView*)a)->TestThread();}
    long TestThread();
 };
 
